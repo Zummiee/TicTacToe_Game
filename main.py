@@ -52,7 +52,7 @@ def get_index():
 
 
 def player_move():
-    global list_1, list_2, list_3, list_4, list_5
+    global list_1, list_3, list_5
     list_to_update = get_list()
     index_to_update = get_index()
     if list_to_update[index_to_update] == " ":
@@ -63,7 +63,7 @@ def player_move():
 
 
 def opponent_move():
-    global list_1, list_2, list_3, list_4, list_5
+    global list_1, list_3, list_5
     list_to_update = changeable_lists[random.choice(list_index)]
     index_to_update = random.choice(position_index)
     if list_to_update[index_to_update] == " ":
